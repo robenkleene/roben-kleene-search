@@ -4,7 +4,7 @@ import './Search.css';
 
 const Search = () => (
   <div className="Search">
-    Search Component
+    <input type="text" />
   </div>
 );
 
