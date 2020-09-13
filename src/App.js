@@ -5,7 +5,6 @@ import Search from "components/Search/Search"
 function App() {
   return (
     <div className="App">
-      Hello World
       <Search />
     </div>
   );
