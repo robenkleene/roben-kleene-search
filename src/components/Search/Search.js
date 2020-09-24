@@ -1,11 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './Search.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "./Search.css";
 
 const Search = () => (
-  <div className="Search">
+  <>
     <input type="text" />
-  </div>
+    <button>Search</button>
+  </>
 );
 
 Search.propTypes = {};
