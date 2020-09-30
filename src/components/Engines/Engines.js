@@ -13,7 +13,7 @@ const Engines = () => {
         <Engine
           value={enginesData[key]}
           title={key}
-          onClick={(value) => handleClick(value)}
+          onClick={() => handleClick(enginesData[key])}
         />
       ))}
     </div>
