@@ -4,8 +4,8 @@ import { enginesData } from "data";
 import Engine from "components/Engine/Engine";
 
 const Engines = () => {
-  function handleClick() {
-    console.log("got here");
+  function handleClick(value) {
+    console.log("value", value);
   }
   return (
     <div className="Engines">
@@ -13,7 +13,7 @@ const Engines = () => {
         <Engine
           value={enginesData[key]}
           title={key}
-          onClick={(i) => this.handleClick(i)}
+          onClick={(value) => handleClick(value)}
         />
       ))}
     </div>
