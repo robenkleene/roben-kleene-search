@@ -4,6 +4,9 @@
     {
       "name": "Launch via npm",
       "type": "node",
+      "env": {
+        "BROWSER": "Microsoft Edge Beta"
+      },
       "request": "launch",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run-script", "start"]
