@@ -1,10 +1,15 @@
 import React from "react";
+import styled from 'styled-components'
 import "./Engine.css";
 
+const Button = styled.button`
+  cursor: pointer;
+`;
+
 const Engine = (props) => (
-  <button className="Engine" value={props.value} onClick={props.onClick}>
+  <Button className="Engine" value={props.value} onClick={props.onClick}>
     {props.title}
-  </button>
+  </Button>
 );
 
 Engine.propTypes = {};
