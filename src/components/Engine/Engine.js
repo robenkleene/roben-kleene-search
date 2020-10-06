@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components'
-import "./Engine.css";
 
 const Button = styled.button`
   cursor: pointer;
