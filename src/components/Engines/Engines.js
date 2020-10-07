@@ -9,12 +9,14 @@ const Engines = () => {
   return (
     <div className="Engines">
       {Object.keys(enginesData).map((key, index) => (
-        <Engine
-          value={enginesData[key]}
-          key={key}
-          title={key}
-          onClick={() => handleClick(enginesData[key])}
-        />
+        <>
+          <Engine
+            value={enginesData[key]}
+            key={key}
+            title={key}
+            onClick={() => handleClick(enginesData[key])}
+          />{" "}
+        </>
       ))}
     </div>
   );
