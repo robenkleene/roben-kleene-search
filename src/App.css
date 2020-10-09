@@ -3,6 +3,10 @@
   margin-top: 200px;
 }
 
+#search {
+  margin-bottom: 16px;
+}
+
 body {
   background-image: repeating-linear-gradient(#ddd 0 1px, transparent 1px 100%),
     repeating-linear-gradient(90deg, #ddd 0 1px, transparent 1px 100%);

@@ -1,10 +1,10 @@
 import React from "react";
 
 const Search = () => (
-  <>
-    <input type="text" />
+  <div id="search">
+    <input type="text" />{" "}
     <button>Search</button>
-  </>
+  </div>
 );
 
 Search.propTypes = {};
