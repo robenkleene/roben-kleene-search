@@ -2,7 +2,7 @@ import React from "react";
 
 const Search = () => (
   <div id="search">
-    <input type="text" />{" "}
+    <input type="text" autofocus="autofocus" />{" "}
     <button>Search</button>
   </div>
 );
