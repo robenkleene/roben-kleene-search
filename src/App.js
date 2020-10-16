@@ -7,8 +7,8 @@ import Chooser from "components/Chooser/Chooser"
 function App() {
   return (
     <div className="App">
-      <Search />
       <Chooser />
+      <Search />
       <Engines />
     </div>
   );
