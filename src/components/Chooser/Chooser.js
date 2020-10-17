@@ -1,8 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Select from "react-select";
+import Select, { NonceProvider } from "react-select";
 
 const customStyles = {
+  dropdownIndicator: () => ({
+    color: 'green',
+  }),
+  placeholder: () => ({
+    color: 'red',
+  }),
+  container: () => ({
+    border: '1px dotted black',
+  }),
   option: (provided, state) => ({
     ...provided,
     borderBottom: '1px dotted pink',
