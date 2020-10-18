@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { enginesData } from "data";
 import Select, { NonceProvider } from "react-select";
 
 const customStyles = {
@@ -35,6 +35,8 @@ const options = [
   { value: "strawberry", label: "Strawberry" },
   { value: "vanilla", label: "Vanilla" },
 ];
+
+// const options = Object.assign({}, ...Object.entries(enginesData).map(([key]) => ({ [key]: key })));
 
 const Chooser = () => <Select styles={customStyles} options={options} />;
 
