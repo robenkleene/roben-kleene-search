@@ -36,7 +36,9 @@ const options = [
   { value: "vanilla", label: "Vanilla" },
 ];
 
-// const options = Object.assign({}, ...Object.entries(enginesData).map(([key]) => ({ [key]: key })));
+const test = Object.assign({}, ...Object.entries(enginesData).map(([key]) => ({ [key]: key })));
+console.log("test = " + JSON.stringify(test));
+console.log("options = " + JSON.stringify(options));
 
 const Chooser = () => <Select styles={customStyles} options={options} />;
 
