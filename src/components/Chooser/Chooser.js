@@ -32,7 +32,7 @@ const customStyles = {
 
 const options = Object.entries(enginesData).map(([key]) => ({ value: key, label: key }));
 
-const Chooser = () => <Select styles={customStyles} options={options} />;
+const Chooser = () => <Select styles={customStyles} options={options} menuIsOpen={true} />;
 
 Chooser.propTypes = {};
 
