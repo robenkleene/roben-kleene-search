@@ -1,5 +1,5 @@
 import React from "react";
-import enginesData from "data";
+import EnginesData from "data";
 import Engine from "components/Engine/Engine";
 
 const Engines = () => {
@@ -8,12 +8,12 @@ const Engines = () => {
   }
   return (
     <div className="Engines">
-      {Object.keys(enginesData).map((key, index) => (
+      {Object.keys(EnginesData).map((key, index) => (
         <Engine
-          value={enginesData[key]}
+          value={EnginesData[key]}
           key={key}
           title={key}
-          onClick={() => handleClick(enginesData[key])}
+          onClick={() => handleClick(EnginesData[key])}
         />
       ))}
     </div>

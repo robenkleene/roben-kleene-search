@@ -1,4 +1,4 @@
-export const enginesData = {
+export const EnginesData = {
   "duckduckgo Lucky": "http://www.duckduckgo.com/?q=%s",
   "Cycling 74": "https://duckduckgo.com/?q=%s+site%3Acycling74.com",
   Audiobus: "https://duckduckgo.com/?q=%s+site%3Aforum.audiob.us",
@@ -32,4 +32,4 @@ export const enginesData = {
   Wikipedia: "https://duckduckgo.com/?q=%s+site%3Awikipedia.org",
 };
 
-export default enginesData;
+export default EnginesData;

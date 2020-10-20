@@ -1,5 +1,5 @@
 import React from "react";
-import enginesData from "data";
+import EnginesData from "data";
 import Select from "react-select";
 
 const customStyles = {
@@ -30,7 +30,7 @@ const customStyles = {
   }
 }
 
-const options = Object.entries(enginesData).map(([key]) => ({ value: key, label: key }));
+const options = Object.entries(EnginesData).map(([key]) => ({ value: key, label: key }));
 
 const Chooser = () => <Select styles={customStyles} options={options} menuIsOpen={true} />;
 
