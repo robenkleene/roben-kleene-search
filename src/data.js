@@ -31,3 +31,5 @@ export const enginesData = {
   Twitter: "https://twitter.com/search?q=%s",
   Wikipedia: "https://duckduckgo.com/?q=%s+site%3Awikipedia.org",
 };
+
+export default enginesData;

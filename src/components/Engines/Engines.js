@@ -1,5 +1,5 @@
 import React from "react";
-import { enginesData } from "data";
+import enginesData from "data";
 import Engine from "components/Engine/Engine";
 
 const Engines = () => {

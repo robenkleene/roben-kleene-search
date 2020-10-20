@@ -1,6 +1,6 @@
 import React from "react";
-import { enginesData } from "data";
-import Select, { NonceProvider } from "react-select";
+import enginesData from "data";
+import Select from "react-select";
 
 const customStyles = {
   dropdownIndicator: () => ({
