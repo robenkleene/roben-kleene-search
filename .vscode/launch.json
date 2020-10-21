@@ -2,11 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch via npm",
+      "name": "yarn run start",
       "type": "node",
       "request": "launch",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run-script", "start"]
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": ["run", "start"]
     }
   ]
 }
