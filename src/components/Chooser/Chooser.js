@@ -3,36 +3,51 @@ import EnginesData from "data";
 import Select from "react-select";
 
 const customStyles = {
-  dropdownIndicator: () => ({
-    color: 'green',
-  }),
-  placeholder: () => ({
-    color: 'red',
-  }),
-  container: () => ({
-    border: '1px dotted black',
-  }),
-  option: (provided, state) => ({
-    ...provided,
-    borderBottom: '1px dotted pink',
-    color: state.isSelected ? 'red' : 'blue',
-    padding: 20,
-  }),
-  control: () => ({
-    // none of react-select's styles are passed to <Control />
-    width: 200,
-  }),
-  singleValue: (provided, state) => {
-    const opacity = state.isDisabled ? 0.5 : 1;
-    const transition = 'opacity 300ms';
+  clearIndicator: () => ({}),
+  container: () => ({}),
+  control: () => ({}),
+  dropdownIndicator: () => ({}),
+  option: () => ({}),
+  placeholder: () => ({}),
+  singleValue: () => ({}),
+};
 
-    return { ...provided, opacity, transition };
-  }
-}
+// const customStyles = {
+//   dropdownIndicator: () => ({
+//     color: "green",
+//   }),
+//   placeholder: () => ({
+//     color: "red",
+//   }),
+//   container: () => ({
+//     border: "1px dotted black",
+//   }),
+//   option: (provided, state) => ({
+//     ...provided,
+//     borderBottom: "1px dotted pink",
+//     color: state.isSelected ? "red" : "blue",
+//     padding: 20,
+//   }),
+//   control: () => ({
+//     // none of react-select's styles are passed to <Control />
+//     width: 200,
+//   }),
+//   singleValue: (provided, state) => {
+//     const opacity = state.isDisabled ? 0.5 : 1;
+//     const transition = "opacity 300ms";
 
-const options = Object.entries(EnginesData).map(([key]) => ({ value: key, label: key }));
+//     return { ...provided, opacity, transition };
+//   },
+// };
 
-const Chooser = () => <Select styles={customStyles} options={options} menuIsOpen={true} />;
+const options = Object.entries(EnginesData).map(([key]) => ({
+  value: key,
+  label: key,
+}));
+
+const Chooser = () => (
+  <Select styles={customStyles} options={options} menuIsOpen={true} />
+);
 
 Chooser.propTypes = {};
 
