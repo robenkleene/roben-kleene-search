@@ -2,15 +2,15 @@ import React from "react";
 import EnginesData from "data";
 import Select from "react-select";
 
-const customStyles = {
-  clearIndicator: () => ({}),
-  container: () => ({}),
-  control: () => ({}),
-  dropdownIndicator: () => ({}),
-  option: () => ({}),
-  placeholder: () => ({}),
-  singleValue: () => ({}),
-};
+// const customStyles = {
+//   clearIndicator: () => ({}),
+//   container: () => ({}),
+//   control: () => ({}),
+//   dropdownIndicator: () => ({}),
+//   option: () => ({}),
+//   placeholder: () => ({}),
+//   singleValue: () => ({}),
+// };
 
 // const customStyles = {
 //   dropdownIndicator: () => ({
@@ -40,13 +40,32 @@ const customStyles = {
 //   },
 // };
 
+const customStyles = {
+  control: provided => ({
+    ...provided,
+    minHeight: "30px",
+  }),
+  indicatorsContainer: provided => ({
+    ...provided,
+    height: "30px"
+  }),
+  clearIndicator: provided => ({
+    ...provided,
+    padding: "5px"
+  }),
+  dropdownIndicator: provided => ({
+    ...provided,
+    padding: "5px"
+  })
+};
+
 const options = Object.entries(EnginesData).map(([key]) => ({
   value: key,
   label: key,
 }));
 
 const Chooser = () => (
-  <Select styles={customStyles} options={options} menuIsOpen={true} />
+  <Select styles={customStyles} options={options} />
 );
 
 Chooser.propTypes = {};
