@@ -5,8 +5,14 @@
       "name": "yarn run start",
       "type": "node",
       "request": "launch",
+      "env": {"BROWSER": "none"},
       "runtimeExecutable": "yarn",
-      "runtimeArgs": ["run", "start"]
+      "runtimeArgs": ["run", "start"],
+      "serverReadyAction": {
+        "pattern": "https?://localhost:([0-9]+)",
+        "uriFormat": "http://localhost:%s",
+        "action": "openExternally"
+      }
     }
   ]
 }
