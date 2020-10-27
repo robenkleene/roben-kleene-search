@@ -41,22 +41,23 @@ import Select from "react-select";
 // };
 
 const customStyles = {
-  control: provided => ({
+  control: (provided) => ({
     ...provided,
     minHeight: "30px",
+    width: "150px",
   }),
-  indicatorsContainer: provided => ({
+  indicatorsContainer: (provided) => ({
     ...provided,
-    height: "30px"
+    height: "30px",
   }),
-  clearIndicator: provided => ({
+  clearIndicator: (provided) => ({
     ...provided,
-    padding: "5px"
+    padding: "5px",
   }),
-  dropdownIndicator: provided => ({
+  dropdownIndicator: (provided) => ({
     ...provided,
-    padding: "5px"
-  })
+    padding: "5px",
+  }),
 };
 
 const options = Object.entries(EnginesData).map(([key]) => ({
@@ -64,9 +65,7 @@ const options = Object.entries(EnginesData).map(([key]) => ({
   label: key,
 }));
 
-const Chooser = () => (
-  <Select styles={customStyles} options={options} />
-);
+const Chooser = () => <Select styles={customStyles} options={options} />;
 
 Chooser.propTypes = {};
 
