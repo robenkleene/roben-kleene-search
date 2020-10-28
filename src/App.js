@@ -1,13 +1,11 @@
-import React from 'react';
-import './App.css';
-import Search from "components/Search/Search"
-import Engines from "components/Engines/Engines"
-import Chooser from "components/Chooser/Chooser"
+import React from "react";
+import "./App.css";
+import Search from "components/Search/Search";
+import Engines from "components/Engines/Engines";
 
 function App() {
   return (
     <div className="App">
-      <Chooser />
       <Search />
       <Engines />
     </div>

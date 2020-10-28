@@ -1,8 +1,10 @@
 import React from "react";
+import Chooser from "components/Chooser/Chooser";
 
 const Search = () => (
   <div id="search">
-    <input type="text" autoFocus="autoFocus" /> <button>Search</button>
+    <Chooser /> <input type="text" autoFocus="autoFocus" />{" "}
+    <button>Search</button>
   </div>
 );
 
