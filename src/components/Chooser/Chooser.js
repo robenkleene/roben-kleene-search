@@ -65,9 +65,13 @@ const options = Object.entries(EnginesData).map(([key]) => ({
   label: key,
 }));
 
-const Chooser = () => (
+const Chooser = (props) => (
   <div style={{ display: "inline-block" }}>
-    <Select styles={customStyles} options={options} />
+    <Select
+      styles={customStyles}
+      options={options}
+      defaultValue={{ label: "Select Dept", value: 0 }}
+    />
   </div>
 );
 Chooser.propTypes = {};
