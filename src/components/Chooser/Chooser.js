@@ -1,5 +1,4 @@
 import React from "react";
-import EnginesData from "data";
 import Select from "react-select";
 
 // const customStyles = {
@@ -60,16 +59,11 @@ const customStyles = {
   }),
 };
 
-const options = Object.entries(EnginesData).map(([key]) => ({
-  value: key,
-  label: key,
-}));
-
 const Chooser = (props) => (
   <div style={{ display: "inline-block" }}>
     <Select
       styles={customStyles}
-      options={options}
+      options={props.options}
       defaultValue={{ label: "Select Dept", value: 0 }}
     />
   </div>
