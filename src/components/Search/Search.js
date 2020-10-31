@@ -7,7 +7,6 @@ const chooserOptions = Object.entries(EnginesData).map(([key]) => ({
   label: key,
 }));
 
-
 const Search = () => (
   <div id="search">
     <Chooser options={chooserOptions} /> <input type="text" autoFocus="autoFocus" />{" "}
