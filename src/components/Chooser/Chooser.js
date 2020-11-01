@@ -64,7 +64,7 @@ const Chooser = (props) => (
     <Select
       styles={customStyles}
       options={props.options}
-      defaultValue={{ label: "Select Dept", value: 0 }}
+      defaultValue={props.defaultValue}
     />
   </div>
 );

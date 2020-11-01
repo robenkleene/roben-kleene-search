@@ -7,9 +7,11 @@ const chooserOptions = Object.entries(EnginesData).map(([key]) => ({
   label: key,
 }));
 
+const chooserDefaultValue = { label: "DuckDuckGo", value: "DuckDuckGo" };
+
 const Search = () => (
   <div id="search">
-    <Chooser options={chooserOptions} /> <input type="text" autoFocus="autoFocus" />{" "}
+    <Chooser options={chooserOptions} defaultValue={chooserDefaultValue} /> <input type="text" autoFocus="autoFocus" />{" "}
     <button>Search</button>
   </div>
 );
