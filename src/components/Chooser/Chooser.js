@@ -65,6 +65,7 @@ const Chooser = (props) => (
       styles={customStyles}
       options={props.options}
       defaultValue={props.defaultValue}
+      autoFocus={props.autoFocus}
     />
   </div>
 );

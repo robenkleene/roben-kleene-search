@@ -11,8 +11,12 @@ const chooserDefaultValue = { label: "DuckDuckGo", value: "DuckDuckGo" };
 
 const Search = () => (
   <div id="search">
-    <Chooser options={chooserOptions} defaultValue={chooserDefaultValue} /> <input type="text" autoFocus="autoFocus" />{" "}
-    <button>Search</button>
+    <Chooser
+      options={chooserOptions}
+      defaultValue={chooserDefaultValue}
+      autoFocus
+    />{" "}
+    <input type="text" /> <button>Search</button>
   </div>
 );
 
