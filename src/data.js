@@ -1,5 +1,5 @@
 export const EnginesData = {
-  "DuckDuckGo Lucky": "http://www.duckduckgo.com/?q=\%s",
+  "DuckDuckGo Lucky": "http://www.duckduckgo.com/?q=\\%s",
   "DuckDuckGo": "http://www.duckduckgo.com/?q=%s",
   "Cycling 74": "https://duckduckgo.com/?q=%s+site%3Acycling74.com",
   Audiobus: "https://duckduckgo.com/?q=%s+site%3Aforum.audiob.us",
