@@ -59,6 +59,10 @@ const customStyles = {
   }),
 };
 
+function handleSelect(e) {
+  document.getElementById("term").focus();
+}
+
 const Chooser = (props) => (
   <div style={{ display: "inline-block" }}>
     <Select
@@ -66,7 +70,8 @@ const Chooser = (props) => (
       options={props.options}
       defaultValue={props.defaultValue}
       autoFocus={props.autoFocus}
-    />
+      onChange={handleSelect}
+/>
   </div>
 );
 Chooser.propTypes = {};

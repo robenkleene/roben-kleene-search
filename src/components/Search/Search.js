@@ -16,7 +16,7 @@ const Search = () => (
       defaultValue={chooserDefaultValue}
       autoFocus
     />{" "}
-    <input type="text" /> <button>Search</button>
+    <input id="term" type="text" /> <button>Search</button>
   </div>
 );
 
