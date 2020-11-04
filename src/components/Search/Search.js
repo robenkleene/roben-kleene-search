@@ -13,6 +13,10 @@ function handleSelect(e) {
   document.getElementById("term").focus();
 }
 
+function search() {
+  console.log("search");
+}
+
 const Search = () => (
   <div id="search">
     <Chooser
@@ -21,7 +25,7 @@ const Search = () => (
       onChange={handleSelect}
       autoFocus
     />{" "}
-    <input id="term" type="text" /> <button>Search</button>
+    <input id="term" type="text" /> <button onClick={search}>Search</button>
   </div>
 );
 
