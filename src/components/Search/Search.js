@@ -9,8 +9,13 @@ const chooserOptions = Object.entries(EnginesData).map(([key]) => ({
 
 const chooserDefaultValue = { label: "DuckDuckGo", value: "DuckDuckGo" };
 
-function handleSelect(e) {
+let queryURL;
+
+function handleChange(e) {
   document.getElementById("term").focus();
+  const key = e.value;
+  queryURL = EnginesData[key];
+  console.log("queryURL = " + queryURL);
 }
 
 function search() {
@@ -22,7 +27,7 @@ const Search = () => (
     <Chooser
       options={chooserOptions}
       defaultValue={chooserDefaultValue}
-      onChange={handleSelect}
+      onChange={handleChange}
       autoFocus
     />{" "}
     <input id="term" type="text" /> <button onClick={search}>Search</button>
