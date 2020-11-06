@@ -7,21 +7,21 @@ const chooserOptions = Object.entries(EnginesData).map(([key]) => ({
   label: key,
 }));
 
-const chooserDefaultValue = { label: "DuckDuckGo", value: "DuckDuckGo" };
-
-let queryURL;
+const defaultKey = "DuckDuckGo"
+let queryURL = EnginesData[defaultKey];
 
 function handleChange(e) {
   document.getElementById("term").focus();
   const key = e.value;
   queryURL = EnginesData[key];
-  console.log("queryURL = " + queryURL);
 }
 
 function search() {
+  console.log("queryURL = " + queryURL);
   console.log("search");
 }
 
+const chooserDefaultValue = { label: defaultKey, value: defaultKey };
 const Search = () => (
   <div id="search">
     <Chooser
