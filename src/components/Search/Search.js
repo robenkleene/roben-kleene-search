@@ -17,8 +17,9 @@ function handleChange(e) {
 }
 
 function search() {
+  const term = document.getElementById("term").value
   console.log("queryURL = " + queryURL);
-  console.log("search");
+  console.log("term = " + term);
 }
 
 const chooserDefaultValue = { label: defaultKey, value: defaultKey };
