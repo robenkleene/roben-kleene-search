@@ -16,25 +16,26 @@ function handleChange(e) {
   queryURL = EnginesData[key];
 }
 
-function search() {
+function search(e) {
   const term = document.getElementById("term").value
   const url = queryURL.replace(/%s/, encodeURIComponent(term));
   console.log("queryURL = " + queryURL);
   console.log("term = " + term);
   console.log("url = " + url);
+  e.preventDefault();
 }
 
 const chooserDefaultValue = { label: defaultKey, value: defaultKey };
 const Search = () => (
-  <div id="search">
+  <form id="search" onSubmit={search}>
     <Chooser
       options={chooserOptions}
       defaultValue={chooserDefaultValue}
       onChange={handleChange}
       autoFocus
     />{" "}
-    <input id="term" type="text" /> <button onClick={search}>Search</button>
-  </div>
+    <input id="term" type="text" /> <input type="submit" value="Search" />
+  </form>
 );
 
 Search.propTypes = {};
