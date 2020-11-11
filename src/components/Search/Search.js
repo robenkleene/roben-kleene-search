@@ -19,10 +19,8 @@ function handleChange(e) {
 function search(e) {
   const term = document.getElementById("term").value
   const url = queryURL.replace(/%s/, encodeURIComponent(term));
-  console.log("queryURL = " + queryURL);
-  console.log("term = " + term);
-  console.log("url = " + url);
   e.preventDefault();
+  window.location.href = url;
 }
 
 const chooserDefaultValue = { label: defaultKey, value: defaultKey };
