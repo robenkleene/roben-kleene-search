@@ -1,14 +1,11 @@
 .App {
   text-align: center;
   margin-top: 200px;
+  /* border: 1px solid red; */
 }
 
-#search {
-  margin-bottom: 16px;
-}
-
-/* body {
+body {
   background-image: repeating-linear-gradient(#ddd 0 1px, transparent 1px 100%),
     repeating-linear-gradient(90deg, #ddd 0 1px, transparent 1px 100%);
   background-size: 8px 8px;
-} */
+}

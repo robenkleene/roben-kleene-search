@@ -42,20 +42,12 @@ import Select from "react-select";
 const customStyles = {
   control: (provided) => ({
     ...provided,
-    minHeight: "30px",
-    width: "150px",
+    minHeight: "38px",
+    width: "152px",
   }),
   indicatorsContainer: (provided) => ({
     ...provided,
-    height: "30px",
-  }),
-  clearIndicator: (provided) => ({
-    ...provided,
-    padding: "5px",
-  }),
-  dropdownIndicator: (provided) => ({
-    ...provided,
-    padding: "5px",
+    height: "38px",
   }),
 };
 
