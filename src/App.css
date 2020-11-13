@@ -4,8 +4,19 @@
   /* border: 1px solid red; */
 }
 
-body {
+#search {
+  text-align: center;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: repeating-linear-gradient(#ddd 0 1px, transparent 1px 100%),
     repeating-linear-gradient(90deg, #ddd 0 1px, transparent 1px 100%);
   background-size: 8px 8px;
+  border: 1px solid red;
+}
+
+body {
+  /* background-image: repeating-linear-gradient(#ddd 0 1px, transparent 1px 100%),
+    repeating-linear-gradient(90deg, #ddd 0 1px, transparent 1px 100%);
+  background-size: 8px 8px; */
 }
