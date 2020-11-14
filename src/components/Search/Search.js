@@ -1,13 +1,22 @@
 import React from "react";
 import Chooser from "components/Chooser/Chooser";
 import EnginesData from "data";
+import styled from "styled-components";
+
+const TermInput = styled.input`
+  margin: 0 8px;
+`;
+
+const SubmitInput = styled.input`
+  cursor: pointer;
+`;
 
 const chooserOptions = Object.entries(EnginesData).map(([key]) => ({
   value: key,
   label: key,
 }));
 
-const defaultKey = "DuckDuckGo"
+const defaultKey = "DuckDuckGo";
 let queryURL = EnginesData[defaultKey];
 
 function handleChange(e) {
@@ -17,7 +26,7 @@ function handleChange(e) {
 }
 
 function search(e) {
-  const term = document.getElementById("term").value
+  const term = document.getElementById("term").value;
   const url = queryURL.replace(/%s/, encodeURIComponent(term));
   e.preventDefault();
   window.location.href = url;
@@ -31,8 +40,9 @@ const Search = () => (
       defaultValue={chooserDefaultValue}
       onChange={handleChange}
       autoFocus
-    />{" "}
-    <input id="term" type="text" /> <input type="submit" value="Search" />
+    />
+    <TermInput id="term" type="text" />
+    <SubmitInput type="submit" value="Search" />
   </form>
 );
 
