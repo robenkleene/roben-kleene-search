@@ -5,7 +5,9 @@ import styled from "styled-components";
 
 const TermInput = styled.input`
   margin: 0 8px;
-`;
+  width: 148px;
+  border: 1px solid #ddd;
+  `;
 
 const SubmitInput = styled.input`
   cursor: pointer;
