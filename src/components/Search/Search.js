@@ -11,6 +11,7 @@ const TermInput = styled.input`
 
 const SubmitInput = styled.input`
   cursor: pointer;
+  margin: 0;
 `;
 
 const chooserOptions = Object.entries(EnginesData).map(([key]) => ({
