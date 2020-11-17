@@ -2,11 +2,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch via npm",
+      "name": "yarn run start",
       "type": "node",
       "request": "launch",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run-script", "start"]
+      "env": {"BROWSER": "none"},
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": ["run", "start"],
+      "serverReadyAction": {
+        "pattern": "https?://localhost:([0-9]+)",
+        "uriFormat": "http://localhost:%s"
+      }
     }
   ]
 }

@@ -1,5 +1,6 @@
-export const enginesData = {
-  "duckduckgo Lucky": "http://www.duckduckgo.com/?q=%s",
+export const EnginesData = {
+  "DuckDuckGo Lucky": "http://www.duckduckgo.com/?q=\\%s",
+  "DuckDuckGo": "http://www.duckduckgo.com/?q=%s",
   "Cycling 74": "https://duckduckgo.com/?q=%s+site%3Acycling74.com",
   Audiobus: "https://duckduckgo.com/?q=%s+site%3Aforum.audiob.us",
   "Acclaimed Music": "https://duckduckgo.com/?q=%s+site%3Aacclaimedmusic.net",
@@ -31,3 +32,5 @@ export const enginesData = {
   Twitter: "https://twitter.com/search?q=%s",
   Wikipedia: "https://duckduckgo.com/?q=%s+site%3Awikipedia.org",
 };
+
+export default EnginesData;
