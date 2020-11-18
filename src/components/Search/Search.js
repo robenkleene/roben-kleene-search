@@ -3,6 +3,10 @@ import Chooser from "components/Chooser/Chooser";
 import EnginesData from "data";
 import styled from "styled-components";
 
+const SearchForm = styled.form`
+  width: 460px;
+`;
+
 const TermInput = styled.input`
   margin: 0 8px;
   width: 148px;
@@ -39,7 +43,7 @@ function search(e) {
 
 const chooserDefaultValue = { label: defaultKey, value: defaultKey };
 const Search = () => (
-  <form id="search" onSubmit={search}>
+  <SearchForm id="search" onSubmit={search}>
     <Chooser
       options={chooserOptions}
       defaultValue={chooserDefaultValue}
@@ -48,7 +52,7 @@ const Search = () => (
     />
     <TermInput id="term" type="text" />
     <SubmitInput type="submit" value="Search" />
-  </form>
+  </SearchForm>
 );
 
 Search.propTypes = {};
