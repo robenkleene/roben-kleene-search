@@ -5,6 +5,8 @@ import styled from "styled-components";
 
 const termInputWidth = 148;
 const submitInputWidth = 64;
+const chooserHeight = 38;
+const chooserWidth = 152;
 
 const SearchForm = styled.form`
   width: 460px;
@@ -49,6 +51,8 @@ const chooserDefaultValue = { label: defaultKey, value: defaultKey };
 const Search = () => (
   <SearchForm id="search" onSubmit={search}>
     <Chooser
+      height={chooserHeight}
+      width={chooserWidth}
       options={chooserOptions}
       defaultValue={chooserDefaultValue}
       onChange={handleChange}
