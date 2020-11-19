@@ -39,22 +39,25 @@ import Select from "react-select";
 //   },
 // };
 
-const customStyles = {
-  control: (provided) => ({
-    ...provided,
-    minHeight: "38px",
-    width: "152px",
-  }),
-  indicatorsContainer: (provided) => ({
-    ...provided,
-    height: "38px",
-  }),
-};
+function customizedStyles(width, height) {
+  const customStyles = {
+    control: (provided) => ({
+      ...provided,
+      minHeight: "38px",
+      width: width,
+    }),
+    indicatorsContainer: (provided) => ({
+      ...provided,
+      height: height,
+    }),
+  };
+  return customStyles;
+}
 
 const Chooser = (props) => (
   <div style={{ display: "inline-block" }}>
     <Select
-      styles={customStyles}
+      styles={customizedStyles("152px", "38px")}
       options={props.options}
       defaultValue={props.defaultValue}
       autoFocus={props.autoFocus}

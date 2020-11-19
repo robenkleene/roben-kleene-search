@@ -3,8 +3,12 @@ import Chooser from "components/Chooser/Chooser";
 import EnginesData from "data";
 import styled from "styled-components";
 
+const termInputWidth = 148;
+const submitInputWidth = 64;
+
 const SearchForm = styled.form`
   width: 460px;
+  text-align: left;
 `;
 
 const TermInput = styled.input`
